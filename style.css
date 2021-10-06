@@ -1,0 +1,224 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: rgb(22, 103, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 6px 5px 18px rgba(0,0,0,0.04);
+    border-radius: 7px;
+    /* padding: 20px; */
+    overflow: hidden;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(22, 103, 224,0.5);
+    box-shadow: 0px 12px 5px rgba(0,0,0,0.06);
+}
+h3{
+    /* width: 100%; */
+    padding: 12px;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(22, 103, 224);
+}
+.back_btn{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    border: none;
+    outline: none;
+    background-color: rgb(22, 103, 224);
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+.whether_input{
+    /* position: relative; */
+    width: 100%;
+    /* padding: 15px; */
+    /* display: ; */
+}
+.whether_input .form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    margin: 4px auto;
+}
+.form .label{
+    font-size: 1.3em;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(22, 103, 224);
+    margin: 10px 0px;
+}
+.form .input{
+    width: 320px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 3px 4px 8px rgba(0,0,0,0.3);
+    color: rgb(22, 103, 224);
+    border: 1px solid rgb(22, 103, 224);
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+    margin: 8px 0px;
+    margin-bottom: 20px;
+}
+.whether_display{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    display: none;
+}
+.city_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 12px; */
+}
+.city_info span{
+    padding: 6px 10px;
+    color: #c1c1c1;
+}
+.city_info span:nth-child(1){
+    color: rgb(22, 103, 224);
+}
+.city_temp{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(4, 73, 153,0.4);
+    padding: 30px 0px 30px 0px;
+}
+.temp_icon{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* background: red; */
+}
+.temp{
+    font-size: 38px;
+    font-weight: 700;
+    margin: 14px 0px;
+}
+.temp-txt{
+    font-size: 18px;
+    font-weight: 600;
+    color: #c1c2c3;
+    text-align: center;
+    letter-spacing: 0.7px;
+    margin-left: 0;
+}
+.temp_type{
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: 0.7px;
+    color: rgb(4, 73, 153);
+}
+.city_other{
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 8px;
+}
+.other{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+}
+.other:nth-child(1){
+    border-right: 1px solid #ccc;
+    padding-right: 70px;
+}
+.hum,.uv,.pressur,.prec,.wind,.cloud{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 12px;
+}
+.txt{
+    color: #cac6c5;
+    font-weight: 600;
+}
+.num{
+    font-size: 1.3em;
+    font-weight: 800;
+    color: rgb(22, 103, 224);
+}
+.wind{
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    padding-bottom: 20px; 
+}
+.pressur,.prec{
+    padding-bottom: 20px;
+}
+
+.wind-note,.prec-mm{
+    font-size: 12px;
+}
+.whether_input.show{
+    display: none;
+}
+.whether_display.show{
+    display: block;
+}
+.back_btn.show{
+    display: block;
+}
+.btn{
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(22, 103, 224);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btn .fas{
+    font-size: 22px;
+    margin: 5px 10px;
+}
+.btn:hover{
+    background-color: rgb(4, 73, 153);
+}

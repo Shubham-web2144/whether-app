@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whether App || JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Whether App</h3>
+        <button class="back_btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="whether_input">
+        <form class="form">
+          <span class="label">Enter your city </span>
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter city name eg.Mumbai..."
+            required
+          />
+          <button class="btn" type="submit">Get Whether 
+            <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
+          </button>
+        </form>
+      </div>
+      <div class="whether_display">
+        <div class="city_info">
+          <span class="city-name"></span>
+          <span class="last-upd"></span>
+        </div>
+        <div class="city_temp">
+          <!-- <div class="temp_icon"></div> -->
+          <span
+            ><span class="temp">00</span>
+            <span class="temp-txt">C</span></span
+          >
+          <span class="temp_type">Paartly Cloudy</span>
+        </div>
+        <div class="city_other">
+          <div class="other">
+            <div class="hum">
+              <span class="txt hum-txt">Humidity</span>
+              <span class="num hum-num">00</span>
+            </div>
+            <div class="uv">
+              <span class="txt uv-txt">UV</span>
+              <span class="num uv-num">00</span>
+            </div>
+            <div class="pressur">
+              <span class="txt pre-txt">Pressure</span>
+              <span class="num pre-num">0000</span>
+              <span class="txt wind-note">mb</span>
+            </div>
+          </div>
+          <div class="other">
+            <div class="cloud">
+              <span class="txt clo-txt">Cloud</span>
+              <span class="num clo-num">00</span>
+            </div>
+            <div class="prec">
+              <span class="txt prec-txt">Preciption</span>
+              <span class="num prec-num">00</span>
+              <span class="txt prec-mm">mm</span>
+            </div>
+            <div class="wind">
+              <span class="txt wind-txt">Wind</span>
+              <div class="wind_info">
+                <span class="num wind-num">00.00</span>
+                <span class="dir wind-dir">W</span>
+              </div>
+              <span class="wind-note txt">KPH</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
