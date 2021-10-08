@@ -18,7 +18,7 @@ let val_inp = document.querySelector(".input");
 
 const fetchData = () => {
   fetch(
-    `http://api.weatherapi.com/v1/current.json?key=0ee9e6de517a4253866111433212509&q=${val_inp.value}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=0ee9e6de517a4253866111433212509&q=${val_inp.value}&aqi=no`
   )
     .then((response) => response.json())
     .then((data) => {
