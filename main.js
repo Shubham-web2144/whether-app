@@ -35,7 +35,7 @@ const fetchData = () => {
       wind_dir.innerHTML = data.current.wind_dir;
       clo_num.innerHTML = data.current.cloud;
 
-      var a = data.current.condition.icon;
+      var a = "https"+data.current.condition.icon;
        temp_img.src = data.current.condition.icon;
       console.log(a)
     });
