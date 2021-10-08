@@ -56,6 +56,7 @@ function showData(e) {
   // val_inp= " ";
 }
 
+// back to  the home page
 const showInput = () => {
   whether_dis.classList.remove("show");
   whether_input.classList.remove("show");
