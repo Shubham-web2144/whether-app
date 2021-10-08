@@ -9,7 +9,7 @@ let temp = document.querySelector(".temp"),
   wind_dir = document.querySelector(".wind-dir"),
   city_name = document.querySelector(".city-name"),
   last_upd = document.querySelector(".last-upd"),
-  temp_img = document.querySelector(".temp_icon");
+  temp_img = document.querySelector(".icon");
 
 let whether_input = document.querySelector(".whether_input"),
   whether_dis = document.querySelector(".whether_display");
@@ -35,9 +35,9 @@ const fetchData = () => {
       wind_dir.innerHTML = data.current.wind_dir;
       clo_num.innerHTML = data.current.cloud;
 
-      // const a = data.current.condition.icon;
-      //  temp_img.style.backgroundImage = "url(`https:${data.current.condition.icon}`)";
-      // console.log(a)
+      var a = data.current.condition.icon;
+       temp_img.src = data.current.condition.icon;
+      console.log(a)
     });
 };
 
